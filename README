@@ -1,10 +1,19 @@
 ProxyPing
 =========
 
-A simple rails plugin that adds an action that your reverse proxy/load balancer can ping and not leave a rails log entry.
+A simple rails plugin that adds an action for your reverse proxy/load balancer to ping and not leave a rails log entry.
+
+Installation Instructions
+=========================
+
+In your rails app:
+
+script/plugin install git://github.com/artpop/proxy_ping.git
+
 
 You will need to add a route like so to your config/routes.rb:
 
 map.route '/proxy_ping', :controller => 'proxy_ping', :action => 'ping'
 
-Copyright (c) 2008 Hugh Evans, released under the MIT license
+
+Copyright (c) 2008 Hugh Evans & Tim Riley, released under the MIT license
